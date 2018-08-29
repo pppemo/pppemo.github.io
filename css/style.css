@@ -1746,3 +1746,8 @@ header {
             transform:scale(0);
   }
 }
+
+.react-icon {
+	width: 100px;
+	margin-bottom: 100px;
+}

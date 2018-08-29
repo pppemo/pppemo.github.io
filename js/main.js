@@ -1,6 +1,13 @@
 (function($) {
 	"use strict"
 
+	$('#find-out-more-button').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $('#about').offset().top
+		}, 600);
+	});
+	
 	///////////////////////////
 	// Preloader
 	$(window).on('load', function() {
@@ -53,10 +60,6 @@
 		// Back To Top Appear
 		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
 	});
-
-	///////////////////////////
-	// magnificPopup
-
 
 	///////////////////////////
 	// Owl Carousel
